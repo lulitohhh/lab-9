@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Mi Muro de Facebook</title>
+</head>
+<body>
+    <div id="muro">
+        <!-- Aquí se mostrarán las publicaciones -->
+    </div>
+    <div class="publicacion">
+        <div class="imagen-perfil">
+            <img src="https://img.freepik.com/vector-premium/perfil-avatar-mujer-icono-redondo_24640-14042.jpg" alt="Imagen de perfil">
+        </div>
+        <button class="texto-publicacion" onclick="abrirModalCrearPublicacion()">Haz clic aquí para crear una nueva publicación</button>
+
+        </div>
+    </div>
+    <div id="modalCrearPublicacion" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModalCrearPublicacion()">&times;</span>
+            <!-- Contenido del modal aquí -->
+            <h2>Crear Publicación</h2>
+            <textarea id="nuevaPublicacionModal" placeholder="Escribe una nueva publicación"></textarea>
+            <button onclick="publicarModal()">Publicar</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
